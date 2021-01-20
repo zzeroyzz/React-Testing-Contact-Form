@@ -17,6 +17,7 @@ const ContactForm = () => {
           <label htmlFor="firstName">First Name*</label>
           <input
             name="firstName"
+            data-testid="firstname"
             placeholder="Edd"
             ref={register({ required: true, maxLength: 3 })}
           />
@@ -30,6 +31,7 @@ const ContactForm = () => {
           <input
             id="lastName"
             name="lastName"
+            data-testid="lastname"
             placeholder="Burke"
             ref={register({ required: true })}
           />
@@ -44,6 +46,7 @@ const ContactForm = () => {
           </label>
           <input name="email" 
             id="lastName"
+            data-testid="email"
             placeholder="bluebill1049@hotmail.com"
             ref={register({ required: true })} 
           />
